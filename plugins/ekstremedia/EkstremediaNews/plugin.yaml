@@ -1,0 +1,31 @@
+plugin:
+    name: 'ekstremedia.ekstremedianews::lang.plugin.name'
+    description: 'ekstremedia.ekstremedianews::lang.plugin.description'
+    author: 'Terje Nesthus'
+    icon: oc-icon-newspaper-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'ekstremedia.ekstremedianews::lang.plugin.short'
+        url: ekstremedia/ekstremedianews/articles
+        icon: icon-newspaper-o
+        sideMenu:
+            side-menu-item:
+                label: 'ekstremedia.ekstremedianews::lang.articles'
+                url: ekstremedia/ekstremedianews/articles
+                icon: icon-align-left
+                permissions:
+                    - ekstremedia.ekstremedianews.articles.manage
+            side-menu-item2:
+                label: Kategorier
+                url: ekstremedia/ekstremedianews/newscategories
+                icon: icon-sitemap
+                permissions:
+                    - ekstremedia.ekstremedianews.articles.manage
+permissions:
+    ekstremedia.ekstremedianews.articles.delete:
+        tab: 'EM News'
+        label: 'Kan slette artikler'
+    ekstremedia.ekstremedianews.articles.manage:
+        tab: 'EM News'
+        label: 'Kan redigere og lage artikler'

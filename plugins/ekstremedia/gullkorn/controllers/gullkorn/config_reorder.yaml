@@ -1,0 +1,4 @@
+title: Gullkorn
+modelClass: Ekstremedia\Gullkorn\Models\Gullkorn
+toolbar:
+    buttons: reorder_toolbar

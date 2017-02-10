@@ -1,0 +1,10 @@
+name: NewsCategories
+form: $/ekstremedia/ekstremedianews/models/newscategory/fields.yaml
+modelClass: Ekstremedia\EkstremediaNews\Models\NewsCategory
+defaultRedirect: ekstremedia/ekstremedianews/newscategories
+create:
+    redirect: 'ekstremedia/ekstremedianews/newscategories/update/:id'
+    redirectClose: ekstremedia/ekstremedianews/newscategories
+update:
+    redirect: ekstremedia/ekstremedianews/newscategories
+    redirectClose: ekstremedia/ekstremedianews/newscategories

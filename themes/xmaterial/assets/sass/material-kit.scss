@@ -1,0 +1,126 @@
+/*! =========================================================
+ *
+ * Material Kit Free - V1.1.0
+ *
+ * =========================================================
+ *
+ *
+ *                       _oo0oo_
+ *                      o8888888o
+ *                      88" . "88
+ *                      (| -_- |)
+ *                      0\  =  /0
+ *                    ___/`---'\___
+ *                  .' \\|     |// '.
+ *                 / \\|||  :  |||// \
+ *                / _||||| -:- |||||- \
+ *               |   | \\\  -  /// |   |
+ *               | \_|  ''\---/''  |_/ |
+ *               \  .-\__  '-'  ___/-. /
+ *             ___'. .'  /--.--\  `. .'___
+ *          ."" '<  `.___\_<|>_/___.' >' "".
+ *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *         \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *     =====`-.____`.___ \_____/___.-`___.-'=====
+ *                       `=---='
+ *
+ *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *               Buddha Bless:  "No Bugs"
+ *
+ * ========================================================= */
+$em-1: #10202B !default; 
+$em-2: #134D77 !default; 
+$em-3: #395D77 !default; 
+$em-4: #774A05 !default; 
+$em-5: #2B1F0C !default; 
+$em-default-text: lighten($em-3, 50%);
+$em-panel-bg: darken($em-1,3%);
+$em-default-header: lighten($em-3,10%);
+$i2: 6;
+$i1: 1;
+$em-link: lighten($em-4,30%);
+$em-link-hover: lighten($em-4,60%);
+a {
+	color: $em-link;
+}
+a:hover {
+	color: $em-link-hover;
+}
+
+.pause {
+	// margin-top: 50px;
+}
+.header-filter-2 {
+    position: relative;
+
+    &:after{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        left: 0;
+        top: 0;
+        content: "";
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .container{
+        z-index: 2;
+        position: relative;
+    }
+}
+.header-filter-2 :after{
+    background: rgba(41, 47, 142, 0.64);
+    background: linear-gradient(45deg,  rgba(41, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+    background: -moz-linear-gradient(135deg,  rgba(41, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+    background: -webkit-linear-gradient(135deg,  rgba(41, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+
+}
+.maxheader {
+	padding-top: 100px;
+	max-height: 180px;
+}
+.tbtek thead {
+}
+.tbtek td {
+	border-bottom: 1px solid darken($em-3, 20%);
+}
+hr {
+		border-top: 1px solid darken($em-3,20%) !important;
+		padding: 0;
+		margin-bottom: 5px;
+}
+.tbtek tr:hover {
+	background: darken($em-1, 2%);
+}
+.tbtek td:nth-child(1) {
+	font-size: 1.5em;
+}
+.tbtek td:nth-child(2) {
+	opacity: 0.9;
+	text-align: right;
+    img {
+        max-width: 50px;
+    }
+}
+
+@for $i from 1 through 6 {
+    .sh-#{$i} {
+		color: $em-default-header;
+	    font-size: #{$i}em;
+	    font-size: #{$i}vh;
+		padding: 4px;
+		margin-bottom: #{10+($i*8)}px;
+   }
+}
+
+@import 'material-kit/variables';
+@import 'material-kit/mixins';
+@import 'material-kit/shadows';
+@import 'material-kit/core';
+
+@import 'material-kit/ripples';
+
+@import 'material-kit/example-pages';

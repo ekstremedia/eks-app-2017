@@ -1,0 +1,10 @@
+name: Articles
+form: $/ekstremedia/ekstremedianews/models/article/fields.yaml
+modelClass: Ekstremedia\EkstremediaNews\Models\Article
+defaultRedirect: ekstremedia/ekstremedianews/articles
+create:
+    redirect: 'ekstremedia/ekstremedianews/articles/update/:id'
+    redirectClose: ekstremedia/ekstremedianews/articles
+update:
+    redirect: ekstremedia/ekstremedianews/articles
+    redirectClose: ekstremedia/ekstremedianews/articles

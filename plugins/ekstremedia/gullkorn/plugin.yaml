@@ -1,0 +1,11 @@
+plugin:
+    name: 'ekstremedia.gullkorn::lang.plugin.name'
+    description: 'ekstremedia.gullkorn::lang.plugin.description'
+    author: ekstremedia
+    icon: oc-icon-leaf
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Menu Item'
+        url: ekstremedia/gullkorn/gullkorn
+        icon: icon-life-ring

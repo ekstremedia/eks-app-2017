@@ -1,0 +1,4 @@
+title: NewsCategories
+modelClass: Ekstremedia\EkstremediaNews\Models\NewsCategory
+toolbar:
+    buttons: reorder_toolbar

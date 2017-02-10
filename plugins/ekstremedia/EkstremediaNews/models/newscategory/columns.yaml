@@ -1,0 +1,16 @@
+columns:
+    title:
+        label: 'ekstremedia.ekstremedianews::lang.title'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: Oppretta
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: Oppdatert
+        type: datetime
+        searchable: true
+        sortable: true

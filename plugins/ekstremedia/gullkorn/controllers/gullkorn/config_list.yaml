@@ -1,0 +1,11 @@
+list: $/ekstremedia/gullkorn/models/gullkorn/columns.yaml
+modelClass: Ekstremedia\Gullkorn\Models\Gullkorn
+title: Gullkorn
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ekstremedia/gullkorn/gullkorn/update/:id'

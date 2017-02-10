@@ -4,9 +4,14 @@
 # compiled output
 /dist
 /tmp
-
+/config
+/vendor
+/storage
+/plugins
+!/plugins/ekstremedia
 # dependencies
 /node_modules
+/myoctober
 
 # IDEs and editors
 /.idea

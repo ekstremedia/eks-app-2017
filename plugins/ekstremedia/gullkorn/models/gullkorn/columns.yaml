@@ -1,0 +1,21 @@
+columns:
+    stemmer:
+        label: Stemmer
+        type: number
+        searchable: true
+        sortable: true
+    nick:
+        label: Nickname
+        type: text
+        searchable: true
+        sortable: true
+    setning:
+        label: Setning
+        type: text
+        searchable: true
+        sortable: true
+    hvemstemte:
+        label: 'Hvem stemte'
+        type: text
+        searchable: true
+        sortable: true

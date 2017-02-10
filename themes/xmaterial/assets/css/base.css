@@ -1,0 +1,148 @@
+
+.ui-view-container {
+  position: relative;
+  height: 65px;
+}
+ 
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1; 
+
+  animation: bounceOutLeft 0.5s linear;
+  -webkit-animation: bounceOutLeft 0.5s linear;
+  -o-animation: bounceOutLeft 0.5s linear;
+  -moz-animation: bounceOutLeft 0.5s linear;
+}
+.urv {
+	  position: absolute;
+  left: 0;
+  right: 0;
+}
+.urv-ng-leave {
+  animation: bounceOutLeft 0.5s linear;
+  -webkit-animation: bounceOutLeft 0.5s linear;
+  -o-animation: bounceOutLeft 0.5s linear;
+  -moz-animation: bounceOutLeft 0.5s linear;
+}
+[urv].ng-leave {
+  animation: bounceOutLeft 0.5s linear;
+  -webkit-animation: bounceOutLeft 0.5s linear;
+  -o-animation: bounceOutLeft 0.5s linear;
+  -moz-animation: bounceOutLeft 0.5s linear;
+}
+
+
+ 
+/* 
+
+[ui-view] {
+    position: absolute;
+    top: 0;
+}
+[ui-view].ng-enter-active {
+    position: absolute;
+    top: 0;
+}
+[ui-view].ng-enter {
+    animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+}
+
+[ui-view].ng-leave {
+    -o-animation: slideOutLeft 2s;
+    -webkit-animation: slideOutLeft 2s;
+    -moz-animation: slideOutLeft 2s;
+    animation: slideOutLeft 2s;
+}
+
+/* 
+[ui-view].ng-leave {
+	    -o-animation: bounceOutLeft 2s;
+    -webkit-animation: bounceOutLeft 2s;
+    -moz-animation: bounceOutLeft 2s;
+    animation: bounceOutLeft 2s;
+}
+
+
+
+
+[ui-view].ng-enter {
+  animation: bounce 0.5s;
+}
+
+@keyframes slideOutLeft {
+    to {
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        transition: opacity(0);
+    }
+}
+@-webkit-keyframes slideOutLeft {
+    to {
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        transition: opacity(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+ */

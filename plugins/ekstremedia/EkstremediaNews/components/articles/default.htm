@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-sm-12">
+      
+        <h4 class="headline h2harr"><span>Artikler</span></h4>
+        <div class="row">
+        {% for post in article.posts %}
+            
+           <div class="col-sm-3">
+                <div class="shop-product featured">
+                    <a href="/bruktn2/shop/product/{{ post.id }}">
+                    {% if post.featured_images[0].path %}
+                         <img src="{{ post.featured_images[0].path }}" class="img-responsive" alt="">
+                    {% endif %}
+                    </a>
+                    <a href="/bruktn2/shop/product/{{ post.id }}"><h6>{{ post.title }}</h6></a>
+                    <p class="price">
+                        <span class="old">{{ post.old_price }}</span>
+                        {% if post.price %}
+                        <span class="new text-success">{{ post.price }} kr</span>
+                        {% else %}
+                        <p class="text-muted">Denne gjenstanden mangler pris.</p>
+                        {% endif %}
+                    </p>
+                    <a href="/bruktn2/shop/product/{{ post.id }}" class="btn btn-sm btn-info"><i class="fa fa-sign-in"></i> Sjå</a>
+                </div>
+            </div>                        
+        {% endfor %}                      
+        </div>
+    </div>
+</div>

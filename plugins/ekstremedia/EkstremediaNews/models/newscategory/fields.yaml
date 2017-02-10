@@ -1,0 +1,19 @@
+fields:
+    title:
+        label: 'ekstremedia.ekstremedianews::lang.title'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    slug:
+        label: Slug
+        oc.commentPosition: ''
+        span: left
+        preset:
+            field: title
+            type: slug
+        type: text
+    description:
+        label: 'ekstremedia.ekstremedianews::lang.description'
+        oc.commentPosition: ''
+        span: left
+        type: text

@@ -1,0 +1,49 @@
+columns:
+    title:
+        label: 'ekstremedia.ekstremedianews::lang.title'
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    slug:
+        label: 'Slug'
+        type: text
+        searchable: true
+        sortable: true
+    published:
+        label: Publisert
+        type: switch
+        searchable: true
+        sortable: true
+    breaking:
+        label: Breaking
+        type: switch
+        searchable: true
+        sortable: true
+    special:
+        label: Spesial
+        type: switch
+        searchable: true
+        sortable: true
+    video:
+        label: Video
+        type: switch
+        searchable: true
+        sortable: true                
+    comments:
+        label: Kommentarer
+        type: switch
+        searchable: true
+        sortable: true        
+    created_at:
+        label: 'ekstremedia.store::lang.oppretta'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'ekstremedia.store::lang.oppdatert'
+        type: datetime
+        searchable: true
+        sortable: true
+    featured_images:
+        label: Thumbnail

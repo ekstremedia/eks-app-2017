@@ -1,0 +1,8 @@
+tabs:
+    fields:
+        hvemstemte:
+            label: Text
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: 'Tab 1'

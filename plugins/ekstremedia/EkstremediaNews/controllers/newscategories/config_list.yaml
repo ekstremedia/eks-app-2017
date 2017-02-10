@@ -1,0 +1,11 @@
+list: $/ekstremedia/ekstremedianews/models/newscategory/columns.yaml
+modelClass: Ekstremedia\EkstremediaNews\Models\NewsCategory
+title: NewsCategories
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ekstremedia/ekstremedianews/newscategories/update/:id'

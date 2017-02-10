@@ -1,0 +1,10 @@
+name: Gullkorn
+form: $/ekstremedia/gullkorn/models/gullkorn/fields.yaml
+modelClass: Ekstremedia\Gullkorn\Models\Gullkorn
+defaultRedirect: ekstremedia/gullkorn/gullkorn
+create:
+    redirect: 'ekstremedia/gullkorn/gullkorn/update/:id'
+    redirectClose: ekstremedia/gullkorn/gullkorn
+update:
+    redirect: ekstremedia/gullkorn/gullkorn
+    redirectClose: ekstremedia/gullkorn/gullkorn

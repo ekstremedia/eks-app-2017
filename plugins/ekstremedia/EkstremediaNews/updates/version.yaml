@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table ekstremedia_ekstremedianews_'
+    - builder_table_create_ekstremedia_ekstremedianews_.php
+1.0.3:
+    - 'Updated table ekstremedia_ekstremedianews_article'
+    - builder_table_update_ekstremedia_ekstremedianews_article.php
+1.0.4:
+    - 'Created table ekstremedia_ekstremedianews_articlecategory'
+    - builder_table_create_ekstremedia_ekstremedianews_articlecategory.php
+1.0.5:
+    - 'Updated table ekstremedia_ekstremedianews_article_category'
+    - builder_table_update_ekstremedia_ekstremedianews_article_category.php

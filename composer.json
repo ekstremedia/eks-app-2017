@@ -1,0 +1,7 @@
+{
+    "require": {
+        "intervention/image": "^2.3",
+        "intervention/imagecache": "^2.3",
+        "thirteen/imagick": "^0.1.1"
+    }
+}

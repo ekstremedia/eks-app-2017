@@ -1,0 +1,4 @@
+title: Articles
+modelClass: Ekstremedia\EkstremediaNews\Models\Article
+toolbar:
+    buttons: reorder_toolbar

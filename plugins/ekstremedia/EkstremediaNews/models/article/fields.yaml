@@ -1,0 +1,89 @@
+fields:
+    title:
+        label: 'ekstremedia.ekstremedianews::lang.title'
+        oc.commentPosition: ''
+        span: left
+        required: 0
+        type: text
+    slug:
+        label: Slug
+        oc.commentPosition: ''
+        span: left
+        required: 1
+        preset:
+            field: title
+            type: slug
+        type: text
+tabs:
+    fields:
+        content:
+            label: Innhold
+            size: giant
+            oc.commentPosition: ''
+            span: left
+            stretch: 1
+            type: richeditor
+            tab: Innhold
+        featured_images:
+            label: 'Velg bilder'
+            oc.commentPosition: ''
+            mode: image
+            imageWidth: 200
+            imageHeight: 200
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Bilder
+        published:
+            label: 'rainlab.blog::lang.post.published'
+            span: left
+            defaultFrom: published
+            type: checkbox
+            tab: Egenskaper
+        published_at:
+            tab: Egenskaper
+            label: 'rainlab.blog::lang.post.published_on'
+            span: left
+            cssClass: checkbox-align
+            type: datepicker
+            mode: date
+            trigger:
+                action: enable
+                field: published
+                condition: checked
+        excerpt:
+            tab: Egenskaper
+            label: 'rainlab.blog::lang.post.excerpt'
+            type: textarea
+            size: small
+        comments:
+            tab: Egenskaper
+            label: Kommentarfelt
+            span: left
+            type: checkbox
+        breaking:
+            tab: Egenskaper
+            label: 'Breaking news!'
+            span: left
+            type: checkbox
+        special:
+            tab: Egenskaper
+            label: Spesial
+            span: left
+            type: checkbox
+        video:
+            tab: Egenskaper
+            label: Videoartikkel
+            span: left
+            type: checkbox
+        categories:
+            label: Kategorier
+            nameFrom: title
+            descriptionFrom: description
+            span: left
+            type: relation
+            commentAbove: 'Kategorier for artikkelen'
+            tab: Kategorier
