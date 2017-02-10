@@ -12,6 +12,8 @@
 # dependencies
 /node_modules
 /myoctober
+/modules
+!/modules/cms/controllers/EmController.php
 
 # IDEs and editors
 /.idea
