@@ -43,20 +43,44 @@ class EmController extends Controller
     }
     public function test()
     {  
-    	// $flight = Gullkorn::where('stemmer','>',1)->count();
-    	// $flight = Gullkorn::where('stemmer','>',1)->count();
-    	// App\Gallery::all()->random()->get();
-// App\Gallery::orderByRaw('RAND()')->get()
-    	$result = Gullkorn::where('stemmer','>=',3)->orderByRaw('RAND()')->take(100)->get();
-    	$i = 0;
-    	$str_arr = [];
-    	foreach($result as $setning) {
-    		$string = $setning->setning;
-    		IF((SUBSTR($string, -1) != '.') && (SUBSTR($string, -1) != '?') && (SUBSTR($string, -1) != '!')){$string.= '.';}
-    		$str_arr[] = ucfirst($string);
-    		// echo ucfirst($string)." <br>";
-    	}
-		return response()->json($str_arr);
+        // $flight = Gullkorn::where('stemmer','>',1)->count();
+        // $flight = Gullkorn::where('stemmer','>',1)->count();
+        // App\Gallery::all()->random()->get();
+        // App\Gallery::orderByRaw('RAND()')->get()
+        
+        $result = Gullkorn::where('stemmer','>=',3)->orderByRaw('RAND()')->take(100)->get();
+        $i = 0;
+        $str_arr = [];
+        foreach($result as $setning) {
+            $string = $setning->setning;
+            IF((SUBSTR($string, -1) != '.') && (SUBSTR($string, -1) != '?') && (SUBSTR($string, -1) != '!')){$string.= '.';}
+            $str_arr[] = ucfirst($string);
+            // echo ucfirst($string)." <br>";
+        }
+        $fn = "gk/gullkorn.json";
+        // $feed_to_array = simplexml_load_file($fn);
+        $json = json_encode($str_arr);  
+        \File::put($fn,$json);              
+        return response()->json($str_arr);
+    }  
+
+        public function testbckup()
+    {  
+        // $flight = Gullkorn::where('stemmer','>',1)->count();
+        // $flight = Gullkorn::where('stemmer','>',1)->count();
+        // App\Gallery::all()->random()->get();
+        // App\Gallery::orderByRaw('RAND()')->get()
+        
+        $result = Gullkorn::where('stemmer','>=',3)->orderByRaw('RAND()')->take(100)->get();
+        $i = 0;
+        $str_arr = [];
+        foreach($result as $setning) {
+            $string = $setning->setning;
+            IF((SUBSTR($string, -1) != '.') && (SUBSTR($string, -1) != '?') && (SUBSTR($string, -1) != '!')){$string.= '.';}
+            $str_arr[] = ucfirst($string);
+            // echo ucfirst($string)." <br>";
+        }
+        return response()->json($str_arr);
     }  
 
     public function testjson()

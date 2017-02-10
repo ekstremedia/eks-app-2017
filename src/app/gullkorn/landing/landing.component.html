@@ -1,11 +1,11 @@
-<div class="container-fluid">
+<div class="container padcont">
+    <p class="display-4 h1">Gullkorn-svada</p>
     <div class="row">
-        <div class="col">
-            <p class="display-3 h1">Gullkorn</p>
-            
- <div *ngFor="let gk of gullkorn | async">
-
-    </div>
+        <div class="col" id="h1">
+        {{ gullkorn }}
+            <h2>{{ gullkorn[0] }}</h2>
+            <h5>{{ gullkorn[1] }}</h5>
+            <p>{{ gullkorn[3] }} {{ gullkorn[4] }} {{ gullkorn[5] }} {{ gullkorn[6] }} {{ gullkorn[7] }} </p>
         </div>
     </div>
 </div>
