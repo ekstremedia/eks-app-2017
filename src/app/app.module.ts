@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { Side2Component } from './side2/side2.component';
@@ -13,6 +13,7 @@ import 'gsap';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { Side3Component } from './sider/side3/side3.component';
 import { MenyComponent } from './nav-bar/meny/meny.component';
+import { LandingComponent } from './gullkorn/landing/landing.component';
 
 /** Map relative paths to URLs. */
 const map: any = {
@@ -33,14 +34,16 @@ const packages: any = {
     WelcomeComponent,
     NavBarComponent,
     Side3Component,
-    MenyComponent
+    MenyComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routing,
-    NgbModule
+    NgbModule,
+    JsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

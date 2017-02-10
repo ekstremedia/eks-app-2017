@@ -5,6 +5,7 @@ import {Side2Component} from './side2/side2.component';
 import {Side3Component} from './sider/side3/side3.component';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {AppComponent} from './app.component';
+import { LandingComponent } from './gullkorn/landing/landing.component';
 
 const appRoutes: Routes = [
 	{
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
 		path: 'side3',
 		component: Side3Component
 	},
+	{
+		path: 'gullkorn',
+		component: LandingComponent
+	},	
 	  { path: '**', component: WelcomeComponent }
 
 ];
