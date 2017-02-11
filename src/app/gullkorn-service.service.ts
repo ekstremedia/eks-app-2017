@@ -3,22 +3,23 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Rx';
 
-
-
 @Injectable()
-export class GullkornServiceService { 
+export class GullkornService { 
+  result: any;
+
   constructor(private http:Http) {
   }
 
-  getGullkorn() {
-    return this.http.get('./gk/gullkorn.json')
-                        // ...and calling .json() on the response to return data
-                         .map((res:Response) => res.json())
+  getGullkorn()  {
 
-                         .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
-
-  	// var getit = this.http.request()
-   //               .map(res => res.json());
-   //  return getit;
+  let result = this.result;
+    this.http.get('./gk/gullkorn.json')
+    .map(res => res.json())
+    .subscribe(
+            val => this.result = val,
+            err => console.error(err),
+            () =>  console.log(this.result));  // this one echoes out what i want
+            console.log(this.result); // but this one doesnt, so i cant return it 
   }
+
 }
