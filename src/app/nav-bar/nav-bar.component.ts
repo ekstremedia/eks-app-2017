@@ -21,10 +21,10 @@ export class NavBarComponent {
 	// console.log(parentRouter);
   constructor() {
 
-
     }
 
   ngOnInit(){
+  		this.av();
  }
 
 
@@ -38,6 +38,11 @@ export class NavBarComponent {
    	if (this.vis) {
    		this.hma();
 		}
+   }   
+   av() {
+    	let eks = document.getElementById("eks-meny");
+			TweenMax.set(eks, { autoAlpha:0 });
+			this.setNeg();   	
    }   
    hma() {
     	let eks = document.getElementById("eks-meny");

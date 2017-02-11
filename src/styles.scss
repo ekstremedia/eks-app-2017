@@ -7,15 +7,27 @@ $mork1: #152E45;
 $mork2: #102233;
 $gr1: #98DB21;
 $gr2: #537812;
+$mork3: #050a0d;
+.clickme {
+	float: right;
+cursor: pointer;
+color: $gr1;
+transition: .2s ease-in-out all;
+}
+.clickme:hover {
+	color: $mork2;
+}
+.cap::first-letter {
+	text-transform: capitalize;
+}
 nav  {
 	background-color: $mork2 !important;
 	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 body {
-	background-color: $bg;
+	background-color: $mork3;
 	font-size: 14px; 
-	color: $lys1;
 }
 
 .redtext { 

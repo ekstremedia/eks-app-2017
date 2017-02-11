@@ -53,14 +53,14 @@ class EmController extends Controller
         $str_arr = [];
         foreach($result as $setning) {
             $string = $setning->setning;
-            IF((SUBSTR($string, -1) != '.') && (SUBSTR($string, -1) != '?') && (SUBSTR($string, -1) != '!')){$string.= '.';}
+            IF((SUBSTR($string, -1) != '.') && (SUBSTR($string, -1) != '?') && (SUBSTR($string, -1) != ',') && (SUBSTR($string, -1) != '!')){$string.= '.';}
             $str_arr[] = ucfirst($string);
             // echo ucfirst($string)." <br>";
         }
-        $fn = "gk/gullkorn.json";
+        $fn = "src/gk/gullkorn.json";
         // $feed_to_array = simplexml_load_file($fn);
         $json = json_encode($str_arr);  
-        \File::put($fn,$json);              
+       \File::put($fn,$json);              
         return response()->json($str_arr);
     }  
 

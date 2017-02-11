@@ -1,10 +1,70 @@
 <div class="container padcont">
-    <p class="display-4 h1">Gullkorn-svada</p>
-    <div class="row">
-        <div class="col" id="h1">
-        {{ gk }}
-        {{ result }}
-        {{ gullkorn }}
+    <span class="display-4">Gullkornisator</span>
+    - Basert på data frå <a target="_blank" href="http://gullkorn.lampefot.net">http://gullkorn.lampefot.net/</a>
+    <button (click)="updateGk()" class="btn btn-outline-success btn-sm clickme">
+         <i class="fa fa-refresh" aria-hidden="true"></i>
+    </button>
+        <hr>
+    <div class="row" id="h1">
+        <div class="col" *ngIf="gullkorn">
+            <h2 class="cap">{{ gullkorn[0] }}</h2>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]">{{gullkorn[number]}} </span>
+            </p>
+            <blockquote class="blockquote cap">
+                <p class="mb-0 cap"><i class="fa fa-quote-left" aria-hidden="true"></i> {{ gullkorn[15] }} <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </p>
+            </blockquote>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [11,12,13,14,15,16,17]">{{gullkorn[number]}} </span>
+            </p>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [59,60,61,62,63,64,65,66,67]">{{gullkorn[number]}} </span>
+                <span class="cap" *ngFor="let number of [68,69,70,71,72,73,74]">{{gullkorn[number]}} </span>
+            </p>
+            <p class="cap"><b>{{ gullkorn[18] }}</b></p>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [19,20,21,22,23,24,25,26,27,28]">{{gullkorn[number]}} </span>
+            </p>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [29,30,31,32,33,34,35,36,37,38]">{{gullkorn[number]}} </span>
+            </p>
+            <blockquote class="blockquote blockquote-reverse">
+                <p class="mb-0 cap">{{ gullkorn[42] }}</p>
+                <footer class="blockquote-footer">
+                    <cite title="Source Title">{{ gullkorn[84] }}</cite>
+                </footer>
+            </blockquote>
+            <p class="cap"><b>{{ gullkorn[39] }}</b></p>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [40,41,42,43,44,45,46,47,48,49]">{{gullkorn[number]}} </span>
+                <span class="cap" *ngFor="let number of [50,51,52,53,54,55,56]">{{gullkorn[number]}} </span>
+            </p>
+            <p class="cap"><b>{{ gullkorn[57] }} {{ gullkorn[58] }}</b></p>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [75,76,77,78,79,80,81,82,83]">{{gullkorn[number]}} </span>
+                <span class="cap" *ngFor="let number of [84,85,86]">{{gullkorn[number]}} </span>
+            </p>
+            <p class="cap">
+                <span class="cap" *ngFor="let number of [87,88,89,90,91,92,93,94,95]">{{gullkorn[number]}} </span>
+                <span class="cap" *ngFor="let number of [96,97,98,99]">{{gullkorn[number]}} </span>
+            </p>
+            <!-- <li *ngFor="number of [0,1,2,3,4]">{{number}}</li> -->
+            <!-- <span class="cap" *ngFor="1 in 10; let i = index; "> {{ gullkorn[i] }} </span>  -->
+            <!--         <span class="cap" *ngFor="let gk of gullkorn; let i = index; "> 
+        <h4 *ngIf="i == 20">
+            {{ gullkorn[i] }} 
+        </h4>
+        <p *ngIf="i == 50">
+            {{ gullkorn[i] }} 
+        </p>    
+        <h4 *ngIf="i == 70">
+            {{ gullkorn[i+2] }} 
+        </h4>              
+        <span class="cap" *ngIf="gullkorn[i+1]">
+        {{ gullkorn[i+1] }} 
+        </span> -->
+            <!-- </span>  -->
+        </div>
     </div>
-</div>
 </div>

@@ -12,14 +12,11 @@ export class GullkornService {
 
   getGullkorn()  {
 
-  let result = this.result;
-    this.http.get('./gk/gullkorn.json')
-    .map(res => res.json())
-    .subscribe(
-            val => this.result = val,
-            err => console.error(err),
-            () =>  console.log(this.result));  // this one echoes out what i want
-            console.log(this.result); // but this one doesnt, so i cant return it 
+  // let result = this.result;
+    return this.http.get('/eks-app-2017/test')
+     // return this.http.get('./gk/gullkorn.json')
+    .map(res => res.json());
+ // but this one doesnt, so i cant return it 
   }
 
 }
